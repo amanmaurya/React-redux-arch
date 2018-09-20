@@ -4,6 +4,7 @@ import {Card, CardTitle, CardText} from 'material-ui/Card';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import ContentAdd from 'material-ui/svg-icons/content/add';
 import { Link } from "react-router-dom";
+
 const Dashboard =()=>{
     const style = {
         margin: 0,
@@ -14,6 +15,8 @@ const Dashboard =()=>{
         position: 'fixed',
     };
     return(
+         <div>
+
         <MuiThemeProvider>
              <Card style={{margin:"4%"}}> 
              <CardTitle title="List of Survey"/>
@@ -21,7 +24,7 @@ const Dashboard =()=>{
                 <ContentAdd />
              </FloatingActionButton></Link>
              </Card>
-        </MuiThemeProvider>
+        </MuiThemeProvider></div>
     );
 }
 

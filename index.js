@@ -31,7 +31,7 @@ if(process.env.NODE_ENV==='production'){
     })
 }
 
-mongoose.connect(keys.mongoURI);
+// mongoose.connect(keys.mongoURI);
 
 console.log("...server running at",PORT);
 app.listen(PORT);
